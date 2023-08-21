@@ -1,5 +1,6 @@
-export default function Home() {
+export default function Usuario() {
   return (
+  <>  
     <nav className="flex justify-between items-center bg-sky-950 px-6 py-4">
       <ul className="flex gap-20 items-end">
         
@@ -17,6 +18,11 @@ export default function Home() {
       </div>
 
     </nav>
+    
+    <main className="bg-slate-900 m-20 p-8">
+      <h2>Usuario</h2>
+    </main>
+  </>
 
   )
 }
