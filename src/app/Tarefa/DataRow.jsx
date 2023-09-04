@@ -7,14 +7,16 @@ export default function DataRow({ tarefa }) {
             <div className="flex gap-1">
                 <CreditCardIcon className="h-6 w-6" />
                 <span>{tarefa.nome}</span>
-            </div>
+                </div>
             <div className="flex gap-1 items-center">
-                <span>R$ 100.00</span>
+                <span>{tarefa.nome.toFixed(2)}</span>
                 <div >
-                    <DropMenu className="text-slate-800" />
+                    <DropMenu className="text-slate-300" />
                 </div>
 
             </div>
         </div>
     )
 }
+
+
