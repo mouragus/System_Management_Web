@@ -19,7 +19,7 @@ export default function FormTarefa(){
             setMessage(resp.error)
             return
         }
-        redirect("/tarefa")
+        redirect("/Tarefa")
     }
 
     return(

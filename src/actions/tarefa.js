@@ -2,6 +2,12 @@
 
 import { revalidatePath } from "next/cache"
 
+export async function getTarefa(){
+    const url = "http://localhost:8080/api/tarefa"
+    const response = await fetch(url,  { next: { revalidate: 3600 } })
+    return response.json()
+  }
+
 export async function create(formData){
     const url = "http://localhost:8080/api/tarefa"
     
