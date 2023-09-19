@@ -2,12 +2,9 @@ import NavBar from "@/components/NavBar";
 import DataRow from "./DataRow";
 import Button from "@/components/Button";
 import { CreditCardIcon } from "@heroicons/react/24/outline";
+import { getTarefa } from "@/actions/tarefa";
 
-async function getTarefa(){
-  const url = "http://localhost:8080/api/tarefa"
-  const response = await fetch(url,  { next: { revalidate: 3600 } })
-  return response.json()
-}
+
 
 export default async function Tarefa() {
   const data = await getTarefa()
